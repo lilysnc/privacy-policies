@@ -1,0 +1,9 @@
+title: LilySNC 개인정보처리방침
+description: LilySNC 게임별 개인정보처리방침
+lang: ko-KR
+url: https://lilysnc.github.io
+baseurl: /privacy-policies
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

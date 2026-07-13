@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ page.title | default: site.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="{{ '/' | relative_url }}">LilySNC 개인정보처리방침</a>
+    </header>
+    <main class="content" id="content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>정책 문서 저장소: <a href="https://github.com/lilysnc/privacy-policies">github.com/lilysnc/privacy-policies</a></p>
+    </footer>
+  </body>
+</html>
