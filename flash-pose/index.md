@@ -12,7 +12,7 @@ permalink: /flash-pose/
 > 시행일: 2026년 7월 19일  
 > 공개 개발자명: 릴리게임즈  
 > 운영 주체: 릴리에스앤씨  
-> 개인정보 문의: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
+> 개인정보 문의: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)  
 > 적용 서비스: `순간포착!`  
 > Android 패키지명: `com.lilysnc.flashpose`  
 > 개인정보처리방침 URL: https://lilysnc.github.io/privacy-policies/flash-pose/
