@@ -22,6 +22,12 @@ permalink: /
       <span>Android 패키지: com.lilysnc.flashpose · 시행일: 2026년 7월 19일</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/weird-talk/' | relative_url }}">
+      <strong>각본대로</strong>
+      <span>Android 패키지: com.lilysnc.weirdtalk · 시행일: 2026년 7월 20일</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
