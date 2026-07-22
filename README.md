@@ -6,5 +6,6 @@
 - 냥냥타워: 우다다팡: https://lilysnc.github.io/privacy-policies/nyang-nyang-tower/
 - 순간포착!: https://lilysnc.github.io/privacy-policies/flash-pose/
 - 각본대로: https://lilysnc.github.io/privacy-policies/weird-talk/
+- 개미 은퇴 대작전: https://lilysnc.github.io/privacy-policies/stock-game/
 
 각 게임 정책은 `<game-slug>/index.md`에 저장하고, `_layouts/default.html`과 `assets/style.css`를 공통으로 사용합니다.

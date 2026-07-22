@@ -28,6 +28,12 @@ permalink: /
       <span>Android 패키지: com.lilysnc.weirdtalk · 시행일: 2026년 7월 20일</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/stock-game/' | relative_url }}">
+      <strong>개미 은퇴 대작전</strong>
+      <span>Android 패키지: com.lilyunni.stockgame · 시행일: 2026년 7월 22일</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
