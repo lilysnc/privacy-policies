@@ -31,7 +31,7 @@ permalink: /
   <li>
     <a class="policy-card" href="{{ '/stock-game/' | relative_url }}">
       <strong>개미 은퇴 대작전</strong>
-      <span>Android 패키지: com.lilyunni.stockgame · 시행일: 2026년 7월 22일</span>
+      <span>Android 패키지: com.lilysnc.stockgame · 시행일: 2026년 7월 22일</span>
     </a>
   </li>
 </ul>

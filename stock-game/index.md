@@ -14,7 +14,7 @@ permalink: /stock-game/
 > 운영 주체: 릴리에스앤씨<br>
 > 개인정보 문의: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)<br>
 > 적용 서비스: `개미 은퇴 대작전`<br>
-> Android 패키지명: `com.lilyunni.stockgame`<br>
+> Android 패키지명: `com.lilysnc.stockgame`<br>
 > 개인정보처리방침 URL: https://lilysnc.github.io/privacy-policies/stock-game/
 
 ## 1. 기본 원칙과 적용 범위
