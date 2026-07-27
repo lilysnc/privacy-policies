@@ -169,7 +169,7 @@ git commit -m "docs: point Play listing to privacy policy"
 
 Expected: 원격이 구성되지 않은 앱 저장소에 로컬 문서 커밋 `a65bbef` 생성.
 
-- [ ] **Step 3: 정책 저장소 변경 커밋·푸시**
+- [x] **Step 3: 정책 저장소 변경 커밋·푸시**
 
 ```powershell
 git add README.md index.md jabaya-janda/index.md docs/superpowers/plans/2026-07-26-jabaya-janda-privacy-policy.md
@@ -179,7 +179,7 @@ git push origin main
 
 Expected: one policy commit pushed to `origin/main`.
 
-- [ ] **Step 4: GitHub Pages 배포 완료 대기와 HTTP 확인**
+- [x] **Step 4: GitHub Pages 배포 완료 대기와 HTTP 확인**
 
 정책 URL을 캐시 우회 쿼리와 함께 요청해 HTTP 200이 될 때까지 GitHub Pages 배포를 확인한다.
 
@@ -193,10 +193,10 @@ if (-not $response.Content.Contains('com.lilysnc.jabaya')) { throw 'Rendered app
 
 Expected: exit code 0.
 
-- [ ] **Step 5: 브라우저 렌더링 확인**
+- [x] **Step 5: 브라우저 렌더링 확인**
 
 공개 URL을 브라우저에서 열고 제목, 적용 범위, 모바일 폭 레이아웃, 외부 링크가 정상 렌더링되는지 확인한다.
 
-- [ ] **Step 6: 최종 원격 정합성 확인**
+- [x] **Step 6: 최종 원격 정합성 확인**
 
 각 저장소에서 `git status --short --branch`를 실행한다. Expected: 정책 저장소는 `main...origin/main`, 원격이 없는 앱 저장소는 `main`이며 두 저장소 모두 추적 변경이 없다.
