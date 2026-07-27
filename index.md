@@ -34,6 +34,12 @@ permalink: /
       <span>Android 패키지: com.lilysnc.stockgame · 시행일: 2026년 7월 22일</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/jabaya-janda/' | relative_url }}">
+      <strong>잡아야 잔다</strong>
+      <span>Android/iOS 앱 ID: com.lilysnc.jabaya · 시행일: 2026년 7월 26일</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
