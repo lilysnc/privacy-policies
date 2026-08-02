@@ -13,7 +13,7 @@ permalink: /
   <li>
     <a class="policy-card" href="{{ '/nyang-nyang-tower/' | relative_url }}">
       <strong>냥냥타워: 우다다팡</strong>
-      <span>Android 패키지: com.lilysnc.nyangnyang · 시행일: 2026년 7월 13일</span>
+      <span>Android 패키지: com.lilysnc.nyangnyang · 앱인토스·Google Play 적용 · 시행일: 2026년 7월 17일</span>
     </a>
   </li>
   <li>
