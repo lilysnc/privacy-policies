@@ -40,6 +40,12 @@ permalink: /
       <span>Android/iOS 앱 ID: com.lilysnc.jabaya · 시행일: 2026년 7월 26일</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/steelball/' | relative_url }}">
+      <strong>스틸볼런</strong>
+      <span>Android 패키지: com.lilysnc.steelball · 앱인토스·Google Play 적용 · 시행일: 2026년 8월 3일</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
