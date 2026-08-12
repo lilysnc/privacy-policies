@@ -43,7 +43,13 @@ permalink: /
   <li>
     <a class="policy-card" href="{{ '/steelball/' | relative_url }}">
       <strong>스틸볼런</strong>
-      <span>Android 패키지: com.lilysnc.steelball · 앱인토스·Google Play 적용 · 시행일: 2026년 8월 3일</span>
+      <span>Android 패키지: com.lilysnc.steelball · 앱인토스·Google Play 적용 · 시행일: 2026년 8월 12일</span>
+    </a>
+  </li>
+  <li>
+    <a class="policy-card" href="{{ '/steelball/en/' | relative_url }}">
+      <strong>Steelball Go (English)</strong>
+      <span>Android package: com.lilysnc.steelball · Apps in Toss and Google Play · Effective 12 August 2026</span>
     </a>
   </li>
 </ul>

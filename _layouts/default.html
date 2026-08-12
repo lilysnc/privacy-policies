@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="ko">
+<!-- 언어는 페이지 front matter가 정한다. 기본값이 `ko`라 기존 페이지 렌더는 그대로다.
+     영문 방침 페이지는 `lang: en`과 `brand`·`repo_label`을 선언해 머리말·꼬리말까지
+     같은 언어로 맞춘다 — `<html lang>`이 거짓이면 스크린리더가 한국어 음성으로 영문을 읽는다. -->
+<html lang="{{ page.lang | default: 'ko' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +13,13 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">릴리게임즈 개인정보처리방침</a>
+      <a class="site-title" href="{{ page.home_url | default: '/' | relative_url }}">{{ page.brand | default: '릴리게임즈 개인정보처리방침' }}</a>
     </header>
     <main class="content" id="content">
       {{ content }}
     </main>
     <footer class="site-footer">
-      <p>정책 문서 저장소: <a href="https://github.com/lilysnc/privacy-policies">github.com/lilysnc/privacy-policies</a></p>
+      <p>{{ page.repo_label | default: '정책 문서 저장소' }}: <a href="https://github.com/lilysnc/privacy-policies">github.com/lilysnc/privacy-policies</a></p>
     </footer>
   </body>
 </html>
