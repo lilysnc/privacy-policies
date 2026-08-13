@@ -14,8 +14,8 @@ permalink: /steelball/en/
 
 > Document status: Revised / covers rewarded ads, Apps in Toss promotions and leaderboards, written for global distribution<br>
 > First published: 3 August 2026<br>
-> Last revised: 12 August 2026<br>
-> Effective date: 12 August 2026<br>
+> Last revised: 14 August 2026<br>
+> Effective date: 14 August 2026<br>
 > Publisher name: Lilygames<br>
 > Legal entity: LilySnC<br>
 > Privacy contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)<br>
@@ -150,7 +150,9 @@ We do not put names, email addresses, phone numbers, precise location, advertisi
 
 Information that the Firebase and Google Analytics SDKs process additionally in order to provide their service — an app instance identifier, approximate location inferred from IP address, device and app information, and automatically collected events — is handled independently by Google. See [Firebase privacy and security](https://firebase.google.com/support/privacy).
 
-**Notice about analytics and advertising consent.** In the current build, the analytics SDK is initialised independently of the advertising consent flow. We will apply analytics consent integration (Google consent mode) and release it in the build that contains it, updating this section at that time. Until then, if you are in the European Economic Area, the United Kingdom or Switzerland and do not want analytics, contact us using section 11 and we will stop the processing.
+**How analytics relates to advertising consent.** Analytics consent integration (Google consent mode v2) is in place. **Before** the analytics SDK is initialised, all four signals — ad storage, ad user data, ad personalisation and analytics storage — are declared as `denied`, and they are updated afterwards only from the advertising consent outcome. Until that outcome arrives, and whenever it cannot be established, the four signals stay `denied`.
+
+There is a single rule for updating them: **analytics is allowed only where the region does not require consent.** In regions that do require it — the European Economic Area, the United Kingdom and Switzerland — the analytics signals stay `denied` even if you chose to consent to advertising. The status reported by the consent management tool cannot distinguish `consented` from `refused` in those regions, and of the two possible errors we chose to avoid **collecting without consent**. We accept the resulting loss of analytics data.
 
 ## 7. Processing in the Apps in Toss mini app
 
@@ -259,10 +261,11 @@ When we change this policy we announce the change and its effective date on this
 - Legal entity: LilySnC
 - Privacy contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
 
-This policy takes effect on **12 August 2026**.
+This policy takes effect on **14 August 2026**.
 
 ## Change history
 
+- 14 August 2026: Updated section 6 to match the shipped behaviour. Analytics consent integration (Google consent mode v2) is in place: all four signals are declared `denied` **before** the analytics SDK is initialised and are updated only from the advertising consent outcome, and analytics stays off in regions that require consent. The previous note offering to stop processing on request "until the integration is applied" was removed because the integration is done.
 - 12 August 2026: Fully revised for global distribution. Added the three rewarded ad placements and the always-present banner surface, Apps in Toss promotion payouts and the Game Center leaderboard, and the differences in data flow between builds. Added GDPR and UK GDPR legal bases and data subject rights, US state privacy choices, the basis for international transfers, and supervisory authority information. Documented the in-game `Settings > Ad settings` consent withdrawal entry point and the current relationship between analytics and advertising consent, and updated the on-device storage list to the current schema. Published this English version alongside the Korean one.
 - 3 August 2026: Clarified, on the basis of distribution in the Republic of Korea only, that the GDPR consent form (UMP) was not used, and described ad personalisation controls in terms of device settings.
 - 3 August 2026: Reflected the Google Play build's AdMob banner and interstitial ads, Firebase Analytics events and common fields, advertising identifier processing, processing outside Korea, and the controls available to users.
