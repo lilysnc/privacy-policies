@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Steelball Go Privacy Policy
-description: How Steelball Go handles advertising and consent, analytics, Apps in Toss promotions and leaderboards, on-device storage, and your privacy rights.
+description: How Steelball Go handles advertising and consent, analytics, promotions and leaderboards, on-device storage, and your privacy rights.
 brand: Lilygames Privacy Policy
 repo_label: Policy repository
 permalink: /steelball/en/
@@ -12,7 +12,7 @@ permalink: /steelball/en/
 
 > Other languages: [한국어](../)
 
-> Document status: Revised / covers rewarded ads, Apps in Toss promotions and leaderboards, written for global distribution<br>
+> Document status: Revised / covers rewarded ads, promotions and both platform leaderboards, written for global distribution<br>
 > First published: 3 August 2026<br>
 > Last revised: 14 August 2026<br>
 > Effective date: 14 August 2026<br>
@@ -32,7 +32,7 @@ This policy covers the three builds below. **Data flows differ by build**, so we
 
 | Build | Advertising | Analytics events sent | Promotions and leaderboard | Storage location |
 | --- | --- | --- | --- | --- |
-| Google Play Android app | Google Mobile Ads (AdMob) banner, interstitial and rewarded | Sent to Firebase Analytics | None | On-device native storage |
+| Google Play Android app | Google Mobile Ads (AdMob) banner, interstitial and rewarded | Sent to Firebase Analytics | Play Games Services leaderboard | On-device native storage |
 | Apps in Toss game mini app | Banner, interstitial and rewarded surfaces provided by Toss | **Not sent** | Toss promotion payouts, Toss Game Center leaderboard | Toss app storage |
 | Browser build (development and QA) | None | **Not sent** | None | Browser `localStorage` |
 
@@ -56,7 +56,7 @@ Where platform or SDK providers such as Google, Toss and GitHub process informat
 | Advertising consent and choices | Where consent is required, it is collected before any ad request, and you can reopen and change it at any time from **`Settings > Ad settings`** inside the game (section 5) |
 | Analytics | Only the **Google Play build** sends gameplay events to Firebase Analytics (section 6) |
 | Apps in Toss promotions | When payout conditions are met we pass Toss only a promotion code and an amount. Toss identifies the recipient and performs the payout (section 7) |
-| Leaderboard | The Apps in Toss build submits a single integer — your personal best — to the Toss Game Center. We do not send a nickname or profile (section 7) |
+| Leaderboard | Both builds submit **only a single integer — your personal best**: the Google Play build to Play Games Services, the Apps in Toss build to the Toss Game Center. We never send a nickname or profile. Your Play Games gamer identity (gamertag, avatar) is handled by Google as part of its own service, and you control who can see it from your Play Games profile (section 7) |
 | Crash reporting SDK | None (no Crashlytics or equivalent) |
 | Sensitive permissions | We do not request location, contacts, photos, camera, microphone, storage or notification permissions |
 | On-device storage | Game progress, promotion payout ledger, audio settings, language setting (section 8) |
@@ -154,17 +154,23 @@ Information that the Firebase and Google Analytics SDKs process additionally in 
 
 There is a single rule for updating them: **analytics is allowed only where the region does not require consent.** In regions that do require it — the European Economic Area, the United Kingdom and Switzerland — the analytics signals stay `denied` even if you chose to consent to advertising. The status reported by the consent management tool cannot distinguish `consented` from `refused` in those regions, and of the two possible errors we chose to avoid **collecting without consent**. We accept the resulting loss of analytics data.
 
-## 7. Processing in the Apps in Toss mini app
+## 7. Processing for promotions and leaderboards
 
-### 7.1 Promotion payouts
+### 7.1 Apps in Toss promotion payouts
 
 When defined conditions are met — cumulative confirmed interstitial impressions, a first run completed with a specific ball, a once-per-day distance milestone, a once-per-day personal-record improvement, and completing a course — the Apps in Toss build passes Toss **only a promotion code and an amount**. Toss identifies the recipient and performs the payout. We do not receive your Toss account details or any personal information contained in the payout result.
 
 To prevent duplicate payouts, the payout history is stored **only on your device** (section 8). Date-keyed entries are cleared after seven days.
 
-### 7.2 Game Center leaderboard
+### 7.2 Apps in Toss Game Center leaderboard
 
 For runs whose result is final, the Apps in Toss build submits **a single integer, your personal best**, to the Toss Game Center. We do not send a nickname, profile image or device information; ranking display and account linkage are handled by Toss. Assisted runs (for example diagnostic mode) are not submitted. We do not operate a ranking server of our own.
+
+### 7.3 Google Play leaderboard (Play Games Services)
+
+For runs whose result is final, the Google Play build submits **a single integer, your personal best in metres**, to the Google Play Games Services leaderboard. Assisted runs (for example diagnostic mode) are not submitted, and we do not operate a ranking server of our own.
+
+The Play Games gamer identity signed in to the game (gamertag, avatar) is **handled by Google as part of the Play Games service**; we do not store those values. Who can see your score and gamertag is set by **your Play Games profile visibility** (`Only you`, `Friends only` or `Everyone`). You can delete this leaderboard data from your Play Games profile or your Google Account (section 10).
 
 ## 8. Information stored on your device
 
@@ -193,6 +199,7 @@ On devices where the operating system's app data backup is enabled, these values
 | --- | --- | --- | --- |
 | Google Mobile Ads (AdMob), Google User Messaging Platform | Delivering banner, interstitial and rewarded ads, collecting consent, measuring performance, preventing abuse | Advertising identifier, IP address, device and app information, ad request, impression and interaction data, consent signals | Google Play |
 | Firebase Analytics (Google) | Analysing gameplay flow and feature quality | The events and common fields in section 6, plus device and app information Google processes to provide the service | Google Play |
+| Google Play Games Services (Google) | Providing leaderboard rankings and game account authentication | The personal best (integer) we submit, plus the Play Games gamer identity (gamertag, avatar) and diagnostics Google processes as part of its own service | Google Play |
 | Viva Republica (Toss) | Running the mini app, providing ad surfaces, promotion payouts, Game Center leaderboard, mini app storage | Information Toss processes to operate its own services, plus the promotion code and amount and the leaderboard score we pass | Apps in Toss |
 | GitHub (Microsoft) | Hosting this privacy policy page | Visitor IP address, access logs | Policy page |
 | Google (email) | Receiving enquiry email | Your sending email address and the content of your enquiry | Enquiries |
@@ -214,6 +221,7 @@ We store no per-user information on any server of ours, so deletion concerns the
 | Game data stored on your device | Until you clear app data or uninstall the app | Google Play: clear `Steelball Go` storage and app data in Android Settings, or uninstall the app / Apps in Toss: remove the mini app in the Toss app / Browser: clear the site's stored data |
 | Enquiry email (sender address, subject and body, attached information) | 30 days after the enquiry is resolved | Deleted after the correspondence ends. Where law requires longer retention, we keep it only to the extent and for the period that law requires |
 | Information held by advertising and analytics providers | According to each provider's policy | The device settings in section 5, your Google Account data and privacy settings, or a request under section 11 |
+| Play Games leaderboard scores | According to Google's policy and your Play Games settings | Delete this game's data from your [Play Games profile](https://play.google.com/games/profile), or delete your games account and its data from your [Google Account](https://myaccount.google.com) |
 
 ## 11. Your rights and how to exercise them
 
@@ -265,6 +273,7 @@ This policy takes effect on **14 August 2026**.
 
 ## Change history
 
+- 14 August 2026: **Reflected the Play Games Services leaderboard added to the Google Play build.** The per-build data flow table said the Google Play build had no leaderboard; that is corrected. Section 7.3 now states that both builds submit only a single integer (your personal best), that your Play Games gamer identity (gamertag, avatar) is handled by Google as part of its own service, and that you set who can see it from your Play Games profile. Play Games Services was added to the third-party table in section 9, and section 10 now documents deleting leaderboard data from your Play Games profile or Google Account. This is a correction describing a feature that is already live, so it takes effect immediately (section 14).
 - 14 August 2026: Updated section 6 to match the shipped behaviour. Analytics consent integration (Google consent mode v2) is in place: all four signals are declared `denied` **before** the analytics SDK is initialised and are updated only from the advertising consent outcome, and analytics stays off in regions that require consent. The previous note offering to stop processing on request "until the integration is applied" was removed because the integration is done.
 - 12 August 2026: Fully revised for global distribution. Added the three rewarded ad placements and the always-present banner surface, Apps in Toss promotion payouts and the Game Center leaderboard, and the differences in data flow between builds. Added GDPR and UK GDPR legal bases and data subject rights, US state privacy choices, the basis for international transfers, and supervisory authority information. Documented the in-game `Settings > Ad settings` consent withdrawal entry point and the current relationship between analytics and advertising consent, and updated the on-device storage list to the current schema. Published this English version alongside the Korean one.
 - 3 August 2026: Clarified, on the basis of distribution in the Republic of Korea only, that the GDPR consent form (UMP) was not used, and described ad personalisation controls in terms of device settings.
