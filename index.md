@@ -55,7 +55,7 @@ permalink: /
   <li>
     <a class="policy-card" href="{{ '/piggybank/' | relative_url }}">
       <strong>돼지 저금통</strong>
-      <span>Android 패키지: com.lilysnc.piggybank · Google Play 적용 · 시행일: 2026년 8월 23일</span>
+      <span>Android 패키지: com.lilysnc.piggybank · Google Play 적용 · AdMob·Firebase Analytics · 시행일: 2026년 8월 23일</span>
     </a>
   </li>
 </ul>
