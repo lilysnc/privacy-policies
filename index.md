@@ -52,6 +52,12 @@ permalink: /
       <span>Android package: com.lilysnc.steelball · Apps in Toss and Google Play · Effective 12 August 2026</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/piggybank/' | relative_url }}">
+      <strong>돼지 저금통</strong>
+      <span>Android 패키지: com.lilysnc.piggybank · Google Play 적용 · 시행일: 2026년 8월 23일</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
