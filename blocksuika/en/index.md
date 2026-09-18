@@ -1,11 +1,11 @@
 ---
 layout: default
-title: BlockSuika Privacy Policy
-description: How BlockSuika stores data on your device, the current status of ads and analytics, third-party processing, and your rights.
+title: Gem Maker Privacy Policy
+description: How Gem Maker stores data on your device, the current status of ads and analytics, third-party processing, and your rights.
 permalink: /blocksuika/en/
 ---
 
-# BlockSuika Privacy Policy
+# Gem Maker Privacy Policy
 
 > Other languages: [한국어](../)
 
@@ -16,13 +16,14 @@ permalink: /blocksuika/en/
 > Publisher name: LilyGames<br>
 > Operating entity: Lily S&C<br>
 > Privacy contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)<br>
-> Covered service: `BlockSuika` / Korean title `블록 스이카`<br>
+> Covered service: `Gem Maker` / Korean title `보석만들기`<br>
+> Former title: `BlockSuika` / `블록 스이카` (renamed on September 18, 2026; the same service)<br>
 > Web build address: https://blocksuika.pages.dev<br>
 > Privacy policy URL: https://lilysnc.github.io/privacy-policies/blocksuika/en/
 
 ## 1. Scope and Data Flow per Build
 
-Lily S&C (publisher name: LilyGames, the “Operator”), the operating entity of `BlockSuika`, takes your privacy seriously and complies with applicable laws including the Personal Information Protection Act (Republic of Korea), the GDPR and UK GDPR (EEA, United Kingdom, Switzerland), and U.S. state privacy laws.
+Lily S&C (publisher name: LilyGames, the “Operator”), the operating entity of `Gem Maker`, takes your privacy seriously and complies with applicable laws including the Personal Information Protection Act (Republic of Korea), the GDPR and UK GDPR (EEA, United Kingdom, Switzerland), and U.S. state privacy laws.
 
 This policy applies to the builds published today. Because **data flows can differ per build**, they are stated first.
 
@@ -183,4 +184,5 @@ This policy is **effective from September 18, 2026**.
 
 ## Change History
 
+- September 18, 2026: Reflected the rename of the service title from `BlockSuika` to `Gem Maker` (Korean `보석만들기`). The data processed, the data flows and the URLs are unchanged (a correction, effective immediately).
 - September 18, 2026: First edition, written for the web build which has no ads, no analytics and no server communication, and published on GitHub Pages. It states the on-device storage items (game progress, gold coins and items, daily reward record, volume and language settings), the hosting providers’ access logs, and your rights and deletion methods. The Korean edition was published at the same time.
