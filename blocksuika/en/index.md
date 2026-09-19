@@ -1,188 +1,86 @@
 ---
 layout: default
 title: Gem Maker Privacy Policy
-description: How Gem Maker stores data on your device, the current status of ads and analytics, third-party processing, and your rights.
+description: Gem Maker device storage, shared leaderboard, ads, analytics and privacy rights.
 permalink: /blocksuika/en/
 ---
 
 # Gem Maker Privacy Policy
 
-> Other languages: [한국어](../)
+[한국어](../)
 
-> Document status: First edition / based on the web build, which has no ads, no analytics and no server communication<br>
-> First published: September 18, 2026<br>
-> Last revised: September 18, 2026<br>
-> Effective date: September 18, 2026<br>
-> Publisher name: LilyGames<br>
-> Operating entity: Lily S&C<br>
-> Privacy contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)<br>
-> Covered service: `Gem Maker` / Korean title `보석만들기`<br>
-> Former title: `BlockSuika` / `블록 스이카` (renamed on September 18, 2026; the same service)<br>
-> Web build address: https://blocksuika.pages.dev<br>
-> Privacy policy URL: https://lilysnc.github.io/privacy-policies/blocksuika/en/
+- First published: September 18, 2026
+- Updated/effective: September 20, 2026, for builds containing the leaderboard feature
+- Developer: Lilygames / Operator: LilySnC
+- Contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
+- Website: https://lilygames.lilysnc.com
+- Service: Gem Maker (formerly BlockSuika)
 
-## 1. Scope and Data Flow per Build
+## 1. Scope
 
-Lily S&C (publisher name: LilyGames, the “Operator”), the operating entity of `Gem Maker`, takes your privacy seriously and complies with applicable laws including the Personal Information Protection Act (Republic of Korea), the GDPR and UK GDPR (EEA, United Kingdom, Switzerland), and U.S. state privacy laws.
+This policy covers Gem Maker for web, Google Play, App Store and Apps in Toss. Actual processing depends on the platform and installed build. The previous statements that the service has no server, identifiers or leaderboard have changed with the shared leaderboard.
 
-This policy applies to the builds published today. Because **data flows can differ per build**, they are stated first.
+## 2. Device storage
 
-| Build | Status | Ads | Analytics events sent | Storage location |
-| --- | --- | --- | --- | --- |
-| Web (browser) | **Published** | None | **Not sent** | Browser `localStorage` |
-| Google Play Android app | Not released | Not included | Not connected | This policy is updated before release |
-| Apple App Store app | Not released | Not included | Not connected | This policy is updated before release |
-| Apps in Toss mini app | Not released | Not included | Not connected | This policy is updated before release |
+We store game progress, best score, play counts, coins/items, daily rewards, spins, ad usage counters, discovered gems, item-help acknowledgements, language and audio settings on the device. Web uses localStorage; native apps use app-specific storage; Apps in Toss uses SDK storage. The complete game save is not uploaded to the leaderboard server. Coins are in-game currency and cannot be exchanged for cash. A password or real name is not required to play.
 
-- The only build you can play today is the **web build**, and it contains **no advertising SDK and no analytics transmission path.**
-- The service has **no sign-up, no login, no chat, no user-generated posts, no cloud save, no in-app purchases, no push notifications and no Operator server.** The Operator runs no API server, account system or database.
-- Image and sound assets ship inside the build; the game does not call an external content server while running.
-- Information that hosting providers such as Cloudflare and GitHub process independently to run their own services is also governed by their own privacy policies.
+## 3. Shared leaderboard
 
-## 2. Summary of Processing
+When enabled, the app contacts our server at startup to create or restore a device-local anonymous participant and authentication session. The server stores an opaque participant ID and a hash of a recovery credential. The device stores that credential; short-lived access tokens are held in runtime memory. This restores the participant on the same installation but does not automatically link installations on different devices or platforms.
 
-| Item | What happens |
-| --- | --- |
-| In-app account or login | None |
-| Data sent to an Operator server | None |
-| Identifiers created by the Operator | None. No value that persistently identifies a device or user is created or stored |
-| Advertising | **Not present in the published build** (Section 4) |
-| Advertising identifier | Not read |
-| Analytics | **Not transmitted** (Section 6) |
-| Remote crash reporting SDK | Not used |
-| In-app purchases or promotional payouts | None |
-| Leaderboard or ranking server | None. Records stay on the device |
-| Sensitive permissions | Location, contacts, photos, camera, microphone, storage and notification permissions are not requested |
-| On-device storage | Game progress, in-game item and gold coin balances, daily reward record, volume settings, language setting (Section 7) |
-| Access logs | When you open the web build, the hosting provider (Cloudflare) may process its own access logs (Section 8) |
-| Messages you send us | Sender email address, message content and anything you attach voluntarily |
-| Sale of personal information | Never. Your information is not sold to third parties for consideration |
-| Sensitive data or child-directed processing | None |
+**Public registration is optional.** On a new best, the app displays the nickname and score and requests your agreement before sending them. An existing local best is offered separately on the home screen. A cancelled draft is not automatically submitted. Your last confirmed nickname and an approved unfinished request may be stored locally for restoration and retry.
 
-The in-game “gold coins” are an **in-game currency** earned only by playing; there is no payment or cash-out feature.
+Submission data includes nickname, score, participant ID, rules version, request/result identifiers and nickname revision. Public rankings show nickname, score, rank and opaque participant information. **Do not put your real name or contact information in a nickname.** Credentials and access tokens are not published.
 
-## 3. Purposes and Legal Bases
+Gem Maker has separate leaderboard data from Steelball. IP addresses are processed for request limiting and security and may appear in proxy/server access logs. Leaderboard scores are not used as evidence for cash or promotional payouts.
 
-For users in regions where the GDPR or UK GDPR applies, the bases below apply. In the Republic of Korea, consent or performance of a contract and legitimate interests under the Personal Information Protection Act are the corresponding bases.
+## 4. Ads, analytics and promotions
 
-| Processing activity | Purpose | GDPR legal basis |
-| --- | --- | --- |
-| Running the game and saving progress (on device) | Providing the service | Performance of a contract (Art. 6(1)(b)) |
-| Delivering the web build and its access logs (hosting) | Service delivery, security and abuse prevention | Legitimate interests (Art. 6(1)(f)) |
-| Serving this policy page (GitHub Pages) | Providing a legally required notice | Legal obligation (Art. 6(1)(c)) or legitimate interests |
-| Handling enquiries | Responding to requests and complaints | Performance of a contract or legitimate interests |
-| Legal compliance | Age rating, accounting, dispute handling | Legal obligation (Art. 6(1)(c)) |
+- Web currently simulates rewarded-ad buttons without playing external ads and does not compose Firebase Analytics. Leaderboard API communication is separate.
+- Google Play/iOS code includes AdMob and Firebase Analytics integration. Where configured, providers may process advertising IDs, IP-derived approximate location, device/app information, ad interactions and diagnostics/analytics. Builds without configured iOS ad units do not display ads.
+- Apps in Toss uses Toss SDK ads and platform event processing. Preapproval test builds use test ad IDs. Promotion codes are currently pending values with zero payout amounts, so actual promotional grants are disabled.
 
-## 4. Advertising
+Provider policies and applicable platform/regional settings apply. The game does not require location, contacts, photos, camera or microphone permission for ranking registration.
 
-The published web build contains **no advertising.** No ad network SDK is included, no advertising identifier is read, and no ad-related external communication takes place.
+## 5. Purposes and choices
 
-The game does contain “watch an ad for a reward” style UI. In the current build that button is implemented as an **internal verification stub that grants the reward immediately without playing any external ad**, and it performs no network communication.
+Device saves provide gameplay continuity. Anonymous credentials authenticate and restore participants. Request limits protect the service from abuse. Your optional publication of a nickname and score provides rankings. Applicable legal bases include service performance, your agreement to public registration, and legitimate security interests where recognized by law.
 
-If real advertising is introduced, the ad providers, the data processed and the consent flow (where required) will be added to this policy **before** the build containing that feature is released (Section 13).
+You can decline public registration and continue playing. Audio and language settings are available in the game. Consult device and provider settings for available advertising choices.
 
-## 5. Your Choices and Device Settings
+## 6. Service providers and processing locations
 
-- **Volume and language**: In the in-game `Settings` you can change music and sound volume and the language (English or Korean); the choice is stored only on your device.
-- **Deleting game data**: Clearing this site’s stored data in your browser removes everything the game saved (Section 9).
-- **Ad personalisation**: The current build has no ads, so there is no related choice to make. If advertising is introduced, the consent or opt-out mechanisms required in your region will be provided with it.
+| Provider | Role |
+|---|---|
+| Cloudflare | Web hosting, public HTTPS API proxy, security and access logs |
+| Oracle Cloud | Hosting our separate leaderboard API and database |
+| GitHub | Hosting this privacy policy |
+| Google | AdMob/Firebase in applicable native builds and support email |
+| Toss | Apps in Toss storage, ads and platform features |
 
-## 6. Analytics
+Providers may process information across their global infrastructure. Locations, retention and transfer safeguards depend on their policies, applicable contracts and law. Clients use the public HTTPS API. The current Cloudflare-to-origin proxy connection uses HTTP; it is not described as end-to-end TLS.
 
-The Operator currently **sends no usage analytics events off the device.** The game contains an interface for recording events, but the implementation shipped in the published build does nothing and is not connected to any analytics service.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) · [Oracle](https://www.oracle.com/legal/privacy/) · [Google](https://policies.google.com/privacy) · [GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)
 
-If an analytics service such as Firebase Analytics is connected, the event types, common fields and consent handling will be written into this policy before the build containing that feature is released.
+## 7. Retention, deletion and recovery
 
-## 7. Information Stored on Your Device
+Device data remains until you clear the site/app data. Server rankings do not have automatic expiry and are retained while providing the service or until a deletion request is processed. Session tokens are valid for 24 hours; request-limit records expire according to their windows. Provider logs and backups follow their applicable operating policies. Support email is deleted within 30 days after resolution unless longer retention is legally required.
 
-The Operator stores the values below **only in device or browser local storage** and never copies them to an Operator server.
+**Clearing device data or uninstalling the app does not automatically delete a published server ranking.** Contact lilygames@lilysnc.com to request access, correction, deletion or withdrawal of publication consent. We will explain the minimum verification needed, such as nickname and participant identification. Do not email passwords, recovery credentials or access tokens. If an anonymous credential is lost, an email address alone may not establish ownership or restore the record.
 
-| Stored item | Contents | Purpose |
-| --- | --- | --- |
-| Game progress | Best score, total games played, highest tier reached | Restoring progress and showing records |
-| In-game currency and items | Gold coin balance, remaining items (hammer, bomb, gem drop, shuffle) | Restoring your holdings |
-| Daily reward record | Last claim day (local day number), cycle day | Granting once per day and computing the streak |
-| Settings | Music and sound volume, selected language (`ko`/`en`) | Restoring settings |
+## 8. Your rights and children
 
-| Build | Physical storage location |
-| --- | --- |
-| Web (browser) | A single browser `localStorage` key (`blocksuika.save.v1`) |
-| Google Play / App Store app (not released) | App-private native storage at release |
-| Apps in Toss mini app (not released) | Mini app storage provided by the Toss app at release |
+Subject to applicable law, you may request access, correction, deletion, restriction, portability, object to processing or withdraw consent. Send requests to the contact above; applicable statutory response periods apply. You may also contact your local privacy authority, including Korea's privacy reporting center (118) or dispute mediation commission.
 
-The stored values contain **no** name, email address, phone number, postal address, precise location, contacts, advertising identifier or device identifier. The only time information stored is a **day-level integer** used for the daily reward.
+The game targets users aged 13 and over and is not primarily directed to children. Users below the applicable local consent age must obtain any required guardian consent. We take appropriate removal measures when unnecessary children's personal information is identified.
 
-## 8. Third Parties, Processors and International Transfers
+## 9. Security and changes
 
-| Provider | Purpose | Information that may be processed | Applies to |
-| --- | --- | --- | --- |
-| Cloudflare | Serving the static files of the web build (Cloudflare Pages), security and abuse prevention | Access logs such as IP address, request time and URL, browser and device information | Web build |
-| GitHub (Microsoft) | Serving this privacy policy page (GitHub Pages) | Visitor IP address, access logs | Policy page |
-| Google (email) | Receiving enquiry emails | Sender email address and message content | Enquiries |
+Server signing secrets are not included in the game bundle. Recovery credentials are hashed server-side. We validate request size, frequency and input and separate public rankings from credentials. These measures do not prove that a client-submitted score reflects genuine gameplay. We do not sell personal information.
 
-Information processed by Cloudflare, GitHub and Google may be processed on **their global infrastructure, including the United States.** Transfers from the EEA or the United Kingdom to third countries rely on the EU Standard Contractual Clauses and the additional safeguards adopted by each provider.
+When features or processing change, we update this policy and required store disclosures. We provide notices and obtain any consent required by applicable law.
 
-- [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/)
-- [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)
-- [Google Privacy Policy](https://policies.google.com/privacy)
+## Changes
 
-## 9. Retention and Deletion
-
-Because the Operator stores no per-user information on its own servers, deletion concerns the values stored on your device and the information held by third parties.
-
-| Target | Retention | How to delete |
-| --- | --- | --- |
-| Game data stored on the device | Until you delete it | Web: clear this site’s stored data or `localStorage` in your browser / After app release: clear app data or uninstall the app |
-| Hosting access logs | Per each hosting provider’s policy | Per the provider’s policy; the Operator does not identify users from these logs |
-| Enquiry emails (sender address, subject, body, attachments) | 30 days after the enquiry is resolved | Deleted after the exchange ends. Where the law requires longer retention, kept only to the extent necessary for that period |
-
-## 10. Your Rights and How to Exercise Them
-
-You may exercise the rights below. For users covered by the GDPR or UK GDPR these include the rights of access, rectification, erasure (right to be forgotten), restriction of processing, data portability, objection, withdrawal of consent, and lodging a complaint with a supervisory authority. For users covered by U.S. state laws these include the rights to access, delete, correct, opt out of sale and sharing, and non-discrimination.
-
-**How to exercise them**
-
-- Game data stored on your device can be deleted directly using the methods in Section 9.
-- For anything else, write to [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com). Where verification is needed we check the minimum information necessary and reply within 30 days of receipt (one month where the GDPR applies, extendable by two months with notice of the reason).
-- The Operator runs no accounts, so an email address alone cannot locate a specific user’s device data. In that case deletion can only be completed with the device-side methods above.
-
-**Supervisory authorities and dispute resolution**
-
-- Republic of Korea: Privacy Infringement Report Centre https://privacy.kisa.or.kr (118) · Personal Information Dispute Mediation Committee https://www.kopico.go.kr (1833-6972) · National Police Agency cybercrime reporting https://ecrm.police.go.kr (182)
-- EEA, United Kingdom, Switzerland: You may lodge a complaint with the data protection authority of your country of residence. See https://edpb.europa.eu/about-edpb/about-edpb/members_en for European authorities and https://ico.org.uk for the United Kingdom.
-
-## 11. Children’s Privacy
-
-The game is intended for users aged 13 and over and is neither designed nor operated primarily for children. Children are not asked to enter personal information, and no information is processed for child-directed advertising.
-
-- Republic of Korea: A user under the age of 14 who needs to contact us must do so through a legal representative.
-- EEA, United Kingdom: If you are under the digital consent age set by your country (13–16), a legal representative’s consent is required.
-- United States: We do not knowingly collect personal information from children under 13. If we learn that we have, we delete it without delay.
-
-## 12. Security Measures
-
-- The game has no personal-data entry feature and the Operator runs no account system.
-- Game data is stored only in device or browser storage and never copied to an Operator server.
-- No dangerous or sensitive permissions are requested.
-- All external communication uses HTTPS; plain HTTP is not used.
-- No personally identifying information or device identifier is written to storage or logs.
-- Before adopting a new SDK or network feature, permissions, consent flows and data flows are reviewed again.
-
-## 13. Update Rules and Notice of Changes
-
-If advertising, analytics, login, in-app purchases, cloud save, leaderboards, remote crash reporting, external server communication, a new distribution platform (Google Play, Apple App Store, Apps in Toss) or any other personal-data processing feature is added or changed, this policy and the privacy disclosures in each store or console are updated **before** the build containing that feature is released.
-
-When this policy changes, the change and its effective date are announced on this page or in the service listing. As a rule, material changes to your rights are announced 30 days in advance and other changes 7 days in advance. **Corrections** that merely describe an already shipped feature accurately take effect immediately.
-
-## 14. Contact and Effective Date
-
-- Publisher name: LilyGames
-- Operating entity: Lily S&C
-- Privacy contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
-
-This policy is **effective from September 18, 2026**.
-
-## Change History
-
-- September 18, 2026: Reflected the rename of the service title from `BlockSuika` to `Gem Maker` (Korean `보석만들기`). The data processed, the data flows and the URLs are unchanged (a correction, effective immediately).
-- September 18, 2026: First edition, written for the web build which has no ads, no analytics and no server communication, and published on GitHub Pages. It states the on-device storage items (game progress, gold coins and items, daily reward record, volume and language settings), the hosting providers’ access logs, and your rights and deletion methods. The Korean edition was published at the same time.
+- September 20, 2026: Shared anonymous leaderboard, optional nickname/score publication, authentication/recovery data, server retention/deletion and platform ad/analytics status.
+- September 18, 2026: Initial publication and Gem Maker naming update.
