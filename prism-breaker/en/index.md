@@ -34,7 +34,7 @@ The current build contains no ad SDK, no analytics, no server of our own, no lea
 
 ## 4. Sharing and device features
 
-Tapping “Share” on the result screen hands a short result text to your device's share sheet. You choose where it goes, and what you share follows that app's policy. Haptics work on the device only. The app requests no permission other than Internet and does not access location, contacts, photos, camera or microphone.
+Tapping “Share” on the result screen hands a short result text to your device's share sheet. You choose where it goes, and what you share follows that app's policy. Haptics work on the device only. The app requests no permissions other than Internet and vibration (haptics) and does not access location, contacts, photos, camera or microphone.
 
 ## 5. Purposes and your choices
 
