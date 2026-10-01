@@ -70,6 +70,18 @@ permalink: /
       <span>Android package: com.lilysnc.prismbreaker · Google Play and web · No ads or analytics · Effective 28 September 2026</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/mergeenterprise/' | relative_url }}">
+      <strong>머지 엔터프라이즈</strong>
+      <span>Android 패키지: com.lilysnc.mergeenterprise · Google Play·웹 적용 · 광고·분석 없음 · 시행일: 2026년 10월 2일</span>
+    </a>
+  </li>
+  <li>
+    <a class="policy-card" href="{{ '/mergeenterprise/en/' | relative_url }}">
+      <strong>Merge Enterprise (English)</strong>
+      <span>Android package: com.lilysnc.mergeenterprise · Google Play and web · No ads or analytics · Effective 2 October 2026</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
