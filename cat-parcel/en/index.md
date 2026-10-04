@@ -3,12 +3,12 @@ layout: default
 lang: en
 brand: Lilygames Privacy Policy
 repo_label: Policy repository
-title: Cat Parcel Sorting Privacy Policy
-description: Cat Parcel Sorting device storage, no ads, analytics or payments, haptics and privacy rights.
+title: Cat Parcel Depot Privacy Policy
+description: Cat Parcel Depot device storage, no ads, analytics or payments, haptics and privacy rights.
 permalink: /cat-parcel/en/
 ---
 
-# Cat Parcel Sorting (고양이 택배상자 정리소) Privacy Policy
+# Cat Parcel Depot (고양이 택배 정리소) Privacy Policy
 
 [한국어](../)
 
@@ -16,11 +16,11 @@ permalink: /cat-parcel/en/
 - Developer: Lilygames / Operator: LilySnC
 - Contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
 - Website: https://lilygames.lilysnc.com
-- Service: Cat Parcel Sorting (Android package: com.lilysnc.catparcel)
+- Service: Cat Parcel Depot (Korean name 고양이 택배 정리소, Android package: com.lilysnc.catparcel)
 
 ## 1. Scope
 
-This policy applies to the Cat Parcel Sorting app on Google Play and the web version (https://cat-parcel.lilyunni.workers.dev).
+This policy applies to the Cat Parcel Depot app on Google Play and the web version (https://cat-parcel.lilyunni.workers.dev).
 
 ## 2. Game progress and device storage
 
