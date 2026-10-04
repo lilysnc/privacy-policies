@@ -82,6 +82,18 @@ permalink: /
       <span>Android package: com.lilysnc.mergeenterprise · Google Play and web · No ads or analytics · Effective 2 October 2026</span>
     </a>
   </li>
+  <li>
+    <a class="policy-card" href="{{ '/cat-parcel/' | relative_url }}">
+      <strong>고양이 택배상자 정리소</strong>
+      <span>Android 패키지: com.lilysnc.catparcel · Google Play·웹 적용 · 광고·분석·결제 없음 · 시행일: 2026년 10월 4일</span>
+    </a>
+  </li>
+  <li>
+    <a class="policy-card" href="{{ '/cat-parcel/en/' | relative_url }}">
+      <strong>Cat Parcel Sorting (English)</strong>
+      <span>Android package: com.lilysnc.catparcel · Google Play and web · No ads, analytics or payments · Effective 4 October 2026</span>
+    </a>
+  </li>
 </ul>
 
 새로운 게임을 출시할 때 이 페이지에 게임별 개인정보처리방침을 추가합니다.
