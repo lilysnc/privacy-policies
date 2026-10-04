@@ -7,7 +7,7 @@ permalink: /piggybank/
 
 # 돼지 저금통 개인정보처리방침
 
-> 시행일: 2026년 10월 3일<br>
+> 시행일: 2026년 10월 5일<br>
 > 최초 작성일: 2026년 8월 23일<br>
 > 공개 개발자명: 릴리게임즈<br>
 > 운영 주체: 릴리에스앤씨<br>
@@ -24,7 +24,7 @@ permalink: /piggybank/
 | 배포본 | 광고·프로모션 | 분석 | 운영자 월별 발행량 서버 |
 | --- | --- | --- | --- |
 | 앱인토스 | 토스가 제공하는 보상형·배너 광고 및 토스 포인트 프로모션 | 앱인토스 Analytics | 지원 버전에서 사용 |
-| Google Play Android | 설정된 Google AdMob 보상형 광고 | Firebase용 Google Analytics | 사용하지 않음 |
+| Google Play Android | v0.7.0부터 Unity LevelPlay 보상형·배너 광고와 ironSource 광고 수요. 이전 버전은 Google AdMob 보상형 광고 | Firebase용 Google Analytics, LevelPlay 광고 측정·Ad Quality | 사용하지 않음 |
 | 일반 웹 | 실제 지급 없는 검증용 모의 광고 | 외부 분석 전송 없음 | 일반 배포본에서는 사용하지 않음 |
 
 광고·분석·배포 플랫폼이 직접 처리하는 정보에는 해당 사업자의 정책도 적용됩니다. 자체 광고코인 발행량 수집은 지원 버전부터 시작하며 이전 버전의 전체 발행량을 소급 생성하지 않습니다.
@@ -67,11 +67,16 @@ permalink: /piggybank/
 
 광고코인은 게임 내 재화이며 토스 포인트와 구분됩니다. 토스 포인트는 공지된 프로모션 조건을 충족하고 플랫폼 지급이 성공한 경우에만 지급됩니다. 광고코인의 보유만으로 현금 출금이나 지급을 보장하지 않습니다.
 
-Google Play 배포본은 설정된 Google AdMob 보상형 광고를 사용합니다. 광고 사업자는 광고 제공·측정, 빈도 제어, 진단과 부정 사용 방지를 위해 IP 주소, 대략적인 위치, 기기·앱·광고 상호작용, 진단 정보와 광고 식별자를 처리할 수 있습니다. 적용 지역 및 배포 설정에 따라 Google UMP 등 광고 개인정보 선택 절차가 적용됩니다. 한국용 배포에서는 해당 동의 화면을 표시하지 않는 설정일 수 있습니다.
+Google Play v0.7.0부터 Unity LevelPlay를 통한 보상형·배너 광고와 ironSource 광고 네트워크를 사용합니다. 이전 버전은 Google AdMob 보상형 광고를 사용합니다. 광고 사업자는 광고 제공·측정, 빈도 제어, 품질 관리, 진단과 부정 사용 방지를 위해 IP 주소, 대략적인 위치, 기기·앱·광고 상호작용, 진단 정보, 광고 식별자 및 App Set ID 등 기기 관련 식별자를 처리할 수 있습니다. LevelPlay SDK에 포함된 Ad Quality는 SDK 초기화와 함께 자동으로 초기화되며 광고 품질 및 노출·수익 측정 정보를 처리할 수 있습니다. 이는 운영자의 기기 내 광고 진단 파일과 별개이고, 해당 SDK가 처리하는 정보에는 사업자 정책이 적용됩니다. 앱은 LevelPlay에 실명·연락처·통계 서버 인증 자격을 제공하지 않습니다.
+
+Google Play의 광고 보상은 게임 내 일반 코인이며 토스 포인트를 지급하지 않습니다. 홈 보상형 광고는 일반 코인30개, 광고코인 교환은 광고코인1개를 사용해 일반 코인50개를 받는 구조입니다. 적용 지역 및 배포 설정에 따라 개인정보 동의·선택 절차가 달라질 수 있습니다. 한국용 배포에서는 별도 GDPR 동의 화면을 표시하지 않는 설정일 수 있으며, 이를 이용자의 동의를 받았다는 의미로 처리하지 않습니다.
 
 - [Google 광고 기술 정보](https://policies.google.com/technologies/ads?hl=ko)
 - [Google Mobile Ads 개인정보 보호](https://developers.google.com/admob/android/privacy)
 - [토스 개인정보처리방침](https://toss.im/privacy-policy)
+- [Unity 개인정보처리방침](https://unity.com/legal/privacy-policy)
+- [LevelPlay 데이터 처리 안내](https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/google-data-safety-questionnaire)
+- [LevelPlay Ad Quality 안내](https://docs.unity.com/en-us/grow/levelplay/sdk/android/integrate-ad-quality)
 
 ## 6. 분석 정보
 
@@ -94,6 +99,7 @@ SDK는 기기·운영체제·브라우저·언어, 이벤트 시각, IP에서 �
 | Oracle Cloud Infrastructure | 운영자 발행량 API와 월별 집계 데이터 호스팅. 현재 운영 DB 리전은 대한민국 서울(`ap-seoul-1`) |
 | Cloudflare | 공개 API의 HTTPS 접속, 프록시·접근 제어·보안. 요청 처리 과정에서 연결 정보와 요청 데이터가 처리될 수 있음 |
 | Google LLC — AdMob·UMP·Firebase용 Google Analytics | 해당 배포본의 광고, 개인정보 선택, 측정·분석·보안 |
+| Unity / ironSource — LevelPlay·Ad Quality | 지원 Android 버전의 광고 중개·보상형/배너 제공, 광고 측정·품질 관리·부정 사용 방지. 대략적인 위치·광고 상호작용·진단·기기 식별자 처리 |
 | Google LLC — Google Play·Android 백업 | 앱 설치·업데이트와 이용자 설정에 따른 기기 백업 |
 | GitHub, Inc. | 이 방침 페이지 제공과 접속 보안 |
 
@@ -103,6 +109,7 @@ SDK는 기기·운영체제·브라우저·언어, 이벤트 시각, IP에서 �
 - [Cloudflare 개인정보처리방침](https://www.cloudflare.com/privacypolicy/)
 - [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko)
 - [GitHub 개인정보처리방침](https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement)
+- [Unity 개인정보처리방침](https://unity.com/legal/privacy-policy)
 
 ## 9. 보유·자동 삭제
 
@@ -149,3 +156,5 @@ SDK는 기기·운영체제·브라우저·언어, 이벤트 시각, IP에서 �
 - 2026년10월3일: 앱인토스 광고·프로모션, 현재 기기 진행·거래 복구·로컬 진단, 운영자 월별 광고코인 발행량 집계와 최근2개 달 자동 삭제, 처리 사업자와 서버 연결 진단을 반영.
 
 새 월별 집계 기능은 해당 기능이 포함된 업데이트부터 적용되며, 과거 전체 발행량을 소급 복원하지 않습니다.
+
+- 2026년10월5일: Google Play v0.7.0의 LevelPlay·ironSource 보상형/배너 및 Ad Quality, 관련 기기 식별자·광고 측정 처리와 게임 내 코인 보상을 고지했습니다. 기존 버전의 AdMob과 앱인토스 처리 범위는 유지합니다.
