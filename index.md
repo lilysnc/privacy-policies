@@ -84,7 +84,7 @@ permalink: /
   </li>
   <li>
     <a class="policy-card" href="{{ '/cat-parcel/' | relative_url }}">
-      <strong>고양이 택배 정리소</strong>
+      <strong>냥냥택배 - 고양이 택배 정리소</strong>
       <span>Android 패키지: com.lilysnc.catparcel · Google Play·웹 적용 · AdMob 광고 · 분석·결제 없음 · 시행일: 2026년 10월 4일</span>
     </a>
   </li>

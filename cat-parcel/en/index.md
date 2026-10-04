@@ -8,7 +8,7 @@ description: Cat Parcel Depot device storage, Google AdMob ads, no analytics or 
 permalink: /cat-parcel/en/
 ---
 
-# Cat Parcel Depot (고양이 택배 정리소) Privacy Policy
+# Cat Parcel Depot (냥냥택배 - 고양이 택배 정리소) Privacy Policy
 
 [한국어](../)
 
@@ -16,7 +16,7 @@ permalink: /cat-parcel/en/
 - Developer: Lilygames / Operator: LilySnC
 - Contact: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
 - Website: https://lilygames.lilysnc.com
-- Service: Cat Parcel Depot (Korean name 고양이 택배 정리소, Android package: com.lilysnc.catparcel)
+- Service: Cat Parcel Depot (Korean name 냥냥택배 - 고양이 택배 정리소, Android package: com.lilysnc.catparcel)
 
 ## 1. Scope
 

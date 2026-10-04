@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 고양이 택배 정리소 개인정보처리방침
-description: 고양이 택배 정리소의 기기 저장, Google AdMob 광고, 분석·결제 없음, 진동 기능 및 개인정보 권리를 안내합니다.
+title: 냥냥택배 - 고양이 택배 정리소 개인정보처리방침
+description: 냥냥택배 - 고양이 택배 정리소의 기기 저장, Google AdMob 광고, 분석·결제 없음, 진동 기능 및 개인정보 권리를 안내합니다.
 permalink: /cat-parcel/
 ---
 
-# 고양이 택배 정리소 개인정보처리방침
+# 냥냥택배 - 고양이 택배 정리소 개인정보처리방침
 
 [English](en/)
 
@@ -13,11 +13,11 @@ permalink: /cat-parcel/
 - 공개 개발자: 릴리게임즈 / 운영 주체: 릴리에스앤씨
 - 문의: [lilygames@lilysnc.com](mailto:lilygames@lilysnc.com)
 - 홈페이지: https://lilygames.lilysnc.com
-- 서비스: 고양이 택배 정리소 (영어 이름 Cat Parcel Depot, Android 패키지: com.lilysnc.catparcel)
+- 서비스: 냥냥택배 - 고양이 택배 정리소 (영어 이름 Cat Parcel Depot, Android 패키지: com.lilysnc.catparcel)
 
 ## 1. 적용 범위
 
-이 방침은 Google Play용 고양이 택배 정리소 앱과 웹 버전(https://cat-parcel.lilyunni.workers.dev)에 적용됩니다.
+이 방침은 Google Play용 냥냥택배 - 고양이 택배 정리소 앱과 웹 버전(https://cat-parcel.lilyunni.workers.dev)에 적용됩니다.
 
 ## 2. 게임 진행과 기기 저장
 
