@@ -4,7 +4,7 @@ lang: en
 brand: Lilygames Privacy Policy
 repo_label: Policy repository
 title: Cat Parcel Depot Privacy Policy
-description: Cat Parcel Depot device storage, no ads, analytics or payments, haptics and privacy rights.
+description: Cat Parcel Depot device storage, Google AdMob ads, no analytics or payments, haptics and privacy rights.
 permalink: /cat-parcel/en/
 ---
 
@@ -28,9 +28,19 @@ Stage progress and stars, coins, gems and booster counts, warehouse level, cats 
 
 Coins and gems are in-game currency with no cash value and there are no purchases. No account, login, real name or contact details are needed.
 
-## 3. Ads, analytics, servers and payments
+## 3. Ads (Google AdMob)
 
-The current build contains no ad SDK, no analytics, no server of our own, no leaderboard and no in-app purchases. The game files (including fonts) ship inside the app, so it runs offline. If ads, analytics or payments are added, this policy and the store disclosures will be updated before that build is released.
+The Google Play app contains Google AdMob ads: rewarded ads (only when you tap a button to opt in — extra relocation, hint or coin bonus), interstitial ads between stages, and a banner at the bottom of the home, warehouse and similar screens. Every stage can be completed without watching any ad.
+
+To request and show ads, the Google AdMob SDK may collect and use on your device: the advertising ID (Android advertising identifier), device information (model, OS, language, screen), approximate location derived from the IP address, and ad interactions (impressions, clicks, completed views). Google processes this data to serve and measure ads and prevent fraud; the operator only sees aggregated ad reports. See [Google's advertising policy](https://policies.google.com/technologies/ads) and [Google's privacy policy](https://policies.google.com/privacy).
+
+In regions where consent is legally required (EEA, UK, some US states), a Google UMP consent form appears before the first ad request, and you can change your choice at any time via "Ad privacy settings" in the Settings screen. The game remains playable if you decline. You can also reset the advertising ID or opt out of personalised ads in Android settings.
+
+The web version (Cloudflare) has no ads.
+
+## 3-1. Analytics, servers and payments
+
+The current build contains no analytics, no server of our own, no leaderboard and no in-app purchases. The game files (including fonts) ship inside the app, so apart from ads it runs offline. If analytics or payments are added, this policy and the store disclosures will be updated before that build is released.
 
 ## 4. Device features and permissions
 
@@ -44,7 +54,7 @@ Device storage exists to keep your progress. “Start over” in Settings erases
 
 | Provider | Role |
 |---|---|
-| Google | Google Play distribution, contact email service |
+| Google | Google Play distribution, Google AdMob ads (advertising ID, device info, approximate location, ad interactions), contact email service |
 | Cloudflare | Web version hosting (security and access logs) |
 | GitHub | Hosting of this privacy policy page |
 
@@ -54,7 +64,7 @@ Processing may occur outside your country on each provider's global infrastructu
 
 ## 7. Retention and deletion
 
-Device data stays until you erase it or uninstall the app. The operator keeps no game progress data. Contact emails are deleted within 30 days after the inquiry is resolved, unless the law requires longer retention.
+Device data stays until you erase it or uninstall the app. The operator keeps no game progress data. Retention of ad-related data follows Google's policies. Contact emails are deleted within 30 days after the inquiry is resolved, unless the law requires longer retention.
 
 ## 8. Your rights and children
 
@@ -64,8 +74,8 @@ The game is intended for users aged 13 and over and is not directed at children.
 
 ## 9. Safeguards and changes
 
-The game does not collect or sell personal information. When features or processing change we update this policy and the required store disclosures, and notify important changes as required by law.
+The operator does not directly collect or sell personal information (the ad SDK's processing is described in section 3). When features or processing change we update this policy and the required store disclosures, and notify important changes as required by law.
 
 ## Change history
 
-- 2026-10-04: First published (first Google Play release; no ads, analytics or payments).
+- 2026-10-04: First published (first Google Play release). Includes Google AdMob ads (rewarded, interstitial, banner) and UMP consent notice. No analytics or payments.

@@ -85,13 +85,13 @@ permalink: /
   <li>
     <a class="policy-card" href="{{ '/cat-parcel/' | relative_url }}">
       <strong>고양이 택배 정리소</strong>
-      <span>Android 패키지: com.lilysnc.catparcel · Google Play·웹 적용 · 광고·분석·결제 없음 · 시행일: 2026년 10월 4일</span>
+      <span>Android 패키지: com.lilysnc.catparcel · Google Play·웹 적용 · AdMob 광고 · 분석·결제 없음 · 시행일: 2026년 10월 4일</span>
     </a>
   </li>
   <li>
     <a class="policy-card" href="{{ '/cat-parcel/en/' | relative_url }}">
       <strong>Cat Parcel Depot (English)</strong>
-      <span>Android package: com.lilysnc.catparcel · Google Play and web · No ads, analytics or payments · Effective 4 October 2026</span>
+      <span>Android package: com.lilysnc.catparcel · Google Play and web · AdMob ads · No analytics or payments · Effective 4 October 2026</span>
     </a>
   </li>
 </ul>
