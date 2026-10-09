@@ -71,6 +71,18 @@ permalink: /
     </a>
   </li>
   <li>
+    <a class="policy-card" href="{{ '/prism-breaker-rush/' | relative_url }}">
+      <strong>Prism Breaker Rush</strong>
+      <span>Android 패키지: com.lilysnc.prismbreakerrush · 기기 저장·웹 호스팅·플랫폼 SDK 및 광고 · 시행일: 2026년 10월 10일</span>
+    </a>
+  </li>
+  <li>
+    <a class="policy-card" href="{{ '/prism-breaker-rush/en/' | relative_url }}">
+      <strong>Prism Breaker Rush (English)</strong>
+      <span>Android package: com.lilysnc.prismbreakerrush · Device storage, hosting, platform SDKs and advertising · Effective 10 October 2026</span>
+    </a>
+  </li>
+  <li>
     <a class="policy-card" href="{{ '/mergeenterprise/' | relative_url }}">
       <strong>머지 엔터프라이즈</strong>
       <span>Android 패키지: com.lilysnc.mergeenterprise · Google Play·웹 적용 · 광고·분석 없음 · 시행일: 2026년 10월 2일</span>

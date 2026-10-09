@@ -9,6 +9,7 @@
 - 개미 은퇴 대작전: https://lilysnc.github.io/privacy-policies/stock-game/
 - 잡아야 잔다: https://lilysnc.github.io/privacy-policies/jabaya-janda/
 - Prism Breaker: https://lilysnc.github.io/privacy-policies/prism-breaker/ (영문 /prism-breaker/en/)
+- Prism Breaker Rush: https://lilysnc.github.io/privacy-policies/prism-breaker-rush/ (영문 /prism-breaker-rush/en/)
 - 머지 엔터프라이즈: https://lilysnc.github.io/privacy-policies/mergeenterprise/ (영문 /mergeenterprise/en/)
 
 각 게임 정책은 `<game-slug>/index.md`에 저장하고, `_layouts/default.html`과 `assets/style.css`를 공통으로 사용합니다.
